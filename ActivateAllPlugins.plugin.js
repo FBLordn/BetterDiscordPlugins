@@ -16,6 +16,7 @@ module.exports = meta => ({
     start() {
         plugins = BdApi.Plugins.getAll();
         plugins.forEach(this.turnOn);
+        BdApi.Plugins.disable("ActivateAllPlugins");
     },
 
     stop(){

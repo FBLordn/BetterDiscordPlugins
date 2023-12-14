@@ -5,7 +5,7 @@
  * @version 0.0.1
  */
 
-module.exports = meta => ({
+module.exports = _ => ({
 
     turnOn(plugin){
         if(!BdApi.Plugins.isEnabled(plugin)){
